@@ -6,7 +6,6 @@ import { Provider } from 'react-redux'
 import { createLogger } from 'redux-logger'
 import thunk from 'redux-thunk'
 import rootReducer from './redux'
-import { getAllProducts } from './redux/product/actions'
 
 import './index.css';
 
@@ -19,8 +18,6 @@ const store = createStore(
   rootReducer,
   applyMiddleware(...middleware)
 )
-
-store.dispatch(getAllProducts())
 
 render(
   <Provider store={store}>

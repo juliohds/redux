@@ -1,4 +1,5 @@
 import { createAction } from 'redux-actions';
-import { GET_PRODUCTS } from './types';
+import { GET_PRODUCTS, SET_QUANTIFY } from './types';
 
-export const getAllProducts = createAction(GET_PRODUCTS);
+export const setAllProducts = createAction(GET_PRODUCTS);
+export const setQuantify = createAction(SET_QUANTIFY);
